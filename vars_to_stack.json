@@ -1,0 +1,6 @@
+{ "compartment_id": "ocid1.compartment.oc1..xxx",
+  "region": "sa-saopaulo-1",
+  "ssh_public_key": "ssh-rsa AAAxxx",
+  "extra_node_pool_subnet": "ocid1.subnet.oc1.sa-saopaulo-1.xxx",
+  "oke_cluster_id": "ocid1.cluster.oc1.sa-saopaulo-1.xxx"
+}
