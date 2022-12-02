@@ -18,7 +18,7 @@ data "oci_core_images" "latest_image" {
   operating_system_version = "8"
   filter {
     name   = "display_name"
-    values = ["^.*Oracle-Linux-8.6-2022.10.04-0-.*$"]
+    values = ["Oracle-Linux-[0-9].[0-9]{1,2}-[0-9]{4}.[0-9]{2}.[0-9]{2}"]
     regex = true
   }
 }
