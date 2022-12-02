@@ -18,7 +18,7 @@ data "oci_core_images" "latest_image" {
   operating_system_version = "8"
   filter {
     name   = "display_name"
-    values = ["^.*aarch64-.*$"]
+    values = ["^.*Oracle-Linux-8.6-2022.10.04-0-.*$"]
     regex = true
   }
 }
@@ -39,7 +39,7 @@ resource "oci_containerengine_node_pool" "k8s_node_pool" {
     size = 2
 
   }
-  node_shape = "VM.Standard.A1.Flex"
+  node_shape = "VM.Standard.E3.Flex"
 
   node_shape_config {
     memory_in_gbs = 16
